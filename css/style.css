@@ -6,10 +6,10 @@
 	box-sizing: border-box;
 }
 
-html {
-	
+.logo{
+	width: 40px;
+	height: 40px;
 }
-
 
 ul{list-style:none;}
 a {text-decoration: none;}
@@ -20,7 +20,7 @@ img {
 /*end reset*/
 body{
 	padding: 30px;
-    background: #59CCB3;
+    background: #fab1a0;
     background-size: cover;
    font-family: 'Raleway', sans-serif;
 }
@@ -96,6 +96,7 @@ h1 {
     padding: 1em;
     box-shadow: 0 0px 1px rgba(197, 197, 197, 0.19),0 1px 2px rgba(0, 0, 0, 0.24);
     background: #fff;
+	border-radius: 10px;
 }
 .w3-message h5,.w3ls-touch h5{
 	color:#474544;
@@ -114,6 +115,7 @@ h1 {
 .social {
 	margin: 1em 0 0 0;
 }
+
 .social ul{
 	padding:0;
 	margin:0;
@@ -121,14 +123,27 @@ h1 {
 .social ul li{
     display: block;
 	margin:1em 0 0 0;
+	height: 50px;
+	display: flex;
+  	justify-content: space-between;
+}
+.social ul li a img{
+    float: left;
+}
+.social ul li a p{
+    float: left;
+	font-weight: bold;
+
+}
+.social ul li a {
+	display: flex;
+	align-items: center;
+	height: 100%;
 }
 .social ul li:nth-child(1){
 	margin:0;
 }
-.social ul li a {
-	color: #333;
-    text-align: center;
-}
+
 .social ul li a i.fa.fa-facebook,.social ul li a i.fa.fa-twitter,.social ul li a i.fa.fa-linkedin,.social ul li a i.fa.fa-google-plus{
     height: 40px;
     width: 40px;
